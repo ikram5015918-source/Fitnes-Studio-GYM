@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fitness Studio Gym - Premium gym in Lahore with certified trainers, modern equipment, and budget-friendly plans. Join now for strength training, weight loss, and personal training.">
+    <meta name="keywords" content="gym, fitness, workout, personal training, Lahore gym, weight loss, strength training, Fitness Studio Gym, Wahdat Road gym">
+    <meta name="author" content="Fitness Studio Gym">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fitnessstudiogym.com/">
+    <meta property="og:title" content="Fitness Studio Gym - Train Anytime. Transform Anytime.">
+    <meta property="og:description" content="Premium Lahore gym with certified trainers, modern equipment, budget-friendly plans. Join us today!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=80&auto=format">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Fitness Studio Gym | Premium Gym in Lahore - Train Anytime, Transform Anytime</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🏋️</text></svg>">
+
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --bg-secondary: #111111;
+            --bg-card: #1a1a1a;
+            --bg-card-hover: #222222;
+            --text: #f5f5f5;
+            --text-secondary: #b0b0b0;
+            --text-muted: #888888;
+            --accent: #e63946;
+            --accent-hover: #ff4d5a;
+            --accent-glow: rgba(230, 57, 70, 0.3);
+            --border: rgba(255, 255, 255, 0.08);
+            --border-light: rgba(255, 255, 255, 0.12);
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+            --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.5);
+            --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.6);
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.06);
+            --glass-blur: blur(16px);
+            --navbar-bg: rgba(10, 10, 10, 0.85);
+            --navbar-blur: blur(20px);
+            --section-padding: 5rem 2rem;
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
+            --transition-fast: 0.2s ease;
+            --transition: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --font-heading: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+            --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+            --max-width: 1200px;
+            --star-color: #f59e0b;
+            --whatsapp-green: #25D366;
+        }
+
+        .light-mode {
+            --bg: #f8f9fa;
+            --bg-secondary: #ffffff;
+            --bg-card: #ffffff;
+            --bg-card-hover: #f0f1f3;
+            --text: #1a1a1a;
+            --text-secondary: #444444;
+            --text-muted: #777777;
+            --border: rgba(0, 0, 0, 0.08);
+            --border-light: rgba(0, 0, 0, 0.12);
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.1);
+            --glass-bg: rgba(255, 255, 255, 0.7);
+            --glass-border: rgba(0, 0, 0, 0.08);
+            --glass-blur: blur(20px);
+            --navbar-bg: rgba(248, 249, 250, 0.9);
+            --navbar-blur: blur(20px);
+            --accent-glow: rgba(230, 57, 70, 0.15);
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            transition: background-color var(--transition), color var(--transition);
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color var(--transition-fast);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: var(--navbar-bg);
+            backdrop-filter: var(--navbar-blur);
+            -webkit-backdrop-filter: var(--navbar-blur);
+            border-bottom: 1px solid var(--border);
+            transition: all var(--transition);
+            padding: 0 1.5rem;
+        }
+        .navbar.scrolled {
+            box-shadow: var(--shadow-md);
+            border-bottom-color: var(--border-light);
+        }
+        .navbar-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+            gap: 1rem;
+        }
+        .nav-logo {
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.35rem;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+            color: var(--text);
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .nav-logo .logo-icon {
+            font-size: 1.6rem;
+            line-height: 1;
+        }
+        .nav-logo span {
+            color: var(--accent);
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1.8rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .nav-links a {
+            color: var(--text-secondary);
+            position: relative;
+            padding: 0.3rem 0;
+            white-space: nowrap;
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width var(--transition-fast);
+            border-radius: 1px;
+        }
+        .nav-links a:hover,
+        .nav-links a:focus-visible {
+            color: var(--text);
+        }
+        .nav-links a:hover::after,
+        .nav-links a:focus-visible::after {
+            width: 100%;
+        }
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+        .theme-toggle {
+            background: var(--glass-bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            cursor: pointer;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all var(--transition-fast);
+            flex-shrink: 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .theme-toggle:hover {
+            border-color: var(--accent);
+            box-shadow: 0 0 16px var(--accent-glow);
+        }
+        .theme-toggle .icon-sun,
+        .theme-toggle .icon-moon {
+            position: absolute;
+            transition: all var(--transition);
+            pointer-events: none;
+        }
+        .light-mode .theme-toggle .icon-sun {
+            opacity: 0;
+            transform: rotate(180deg) scale(0.5);
+        }
+        .light-mode .theme-toggle .icon-moon {
+            opacity: 1;
+            transform: rotate(0deg) scale(1);
+        }
+        .theme-toggle .icon-sun {
+            opacity: 1;
+            transform: rotate(0deg) scale(1);
+        }
+        .theme-toggle .icon-moon {
+            opacity: 0;
+            transform: rotate(-180deg) scale(0.5);
+        }
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.4rem;
+            z-index: 1001;
+            flex-shrink: 0;
+        }
+        .hamburger span {
+            display: block;
+            width: 26px;
+            height: 2.5px;
+            background: var(--text);
+            margin: 6px 0;
+            border-radius: 2px;
+            transition: all var(--transition);
+        }
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+        .nav-cta-btn {
+            background: var(--accent);
+            color: #fff;
+            padding: 0.55rem 1.3rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            transition: all var(--transition-fast);
+            white-space: nowrap;
+            border: none;
+            cursor: pointer;
+        }
+        .nav-cta-btn:hover {
+            background: var(--accent-hover);
+            box-shadow: 0 4px 20px var(--accent-glow);
+            transform: translateY(-1px);
+        }
+
+        @media (max-width: 1024px) {
+            .nav-links {
+                gap: 1.2rem;
+                font-size: 0.8rem;
+                letter-spacing: 0.3px;
+            }
+            .nav-cta-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.78rem;
+            }
+        }
+        @media (max-width: 860px) {
+            .hamburger {
+                display: block;
+            }
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 280px;
+                height: 100vh;
+                flex-direction: column;
+                background: var(--bg-secondary);
+                padding: 6rem 2rem 2rem;
+                gap: 1.8rem;
+                transition: right var(--transition);
+                box-shadow: var(--shadow-lg);
+                z-index: 999;
+                border-left: 1px solid var(--border);
+            }
+            .nav-links.active {
+                right: 0;
+            }
+            .nav-cta-btn.desktop-only {
+                display: none;
+            }
+            .mobile-menu-overlay {
+                display: none;
+                position: fixed;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 998;
+            }
+            .mobile-menu-overlay.active {
+                display: block;
+            }
+        }
+        @media (min-width: 861px) {
+            .nav-cta-btn.mobile-only {
+                display: none;
+            }
+        }
+
+        /* HERO */
+        .hero {
+            position: relative;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            padding: 4rem 1.5rem;
+        }
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+        .hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 30%;
+            filter: brightness(0.35) saturate(1.1);
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(10, 10, 10, 0.7) 0%, rgba(10, 10, 10, 0.85) 60%, var(--bg) 100%);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            padding: 0.4rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 1.5rem;
+        }
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(2.4rem, 5.5vw, 4rem);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            line-height: 1.1;
+            margin-bottom: 1.2rem;
+            color: #fff;
+        }
+        .hero h1 span {
+            color: var(--accent);
+        }
+        .hero-subtitle {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: #ccc;
+            margin-bottom: 2.5rem;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+        }
+        .hero-btns {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.85rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all var(--transition);
+            white-space: nowrap;
+            font-family: var(--font-body);
+        }
+        .btn-primary {
+            background: var(--accent);
+            color: #fff;
+            border-color: var(--accent);
+        }
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            border-color: var(--accent-hover);
+            box-shadow: 0 6px 28px var(--accent-glow);
+            transform: translateY(-2px);
+        }
+        .btn-outline {
+            background: transparent;
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+        .btn-outline:hover {
+            border-color: #fff;
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-2px);
+        }
+        .hero-scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            animation: bounceDown 2s ease-in-out infinite;
+            opacity: 0.7;
+        }
+        .hero-scroll-indicator svg {
+            width: 28px;
+            height: 28px;
+            stroke: #fff;
+        }
+        @keyframes bounceDown {
+            0%,
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            50% {
+                transform: translateX(-50%) translateY(10px);
+            }
+        }
+
+        /* SECTIONS */
+        section {
+            padding: var(--section-padding);
+        }
+        .section-label {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent);
+            margin-bottom: 0.8rem;
+        }
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .section-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            max-width: 600px;
+            margin-bottom: 3rem;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .text-center .section-subtitle {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* FEATURES */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 2rem 1.5rem;
+            text-align: center;
+            transition: all var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 0 0 3px 3px;
+            opacity: 0;
+            transition: all var(--transition);
+        }
+        .feature-card:hover {
+            border-color: var(--border-light);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+        .feature-card:hover::before {
+            opacity: 1;
+            width: 80px;
+        }
+        .feature-icon {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            display: block;
+            line-height: 1;
+        }
+        .feature-card h3 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.4rem;
+        }
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* ABOUT */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .about-image {
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            box-shadow: var(--shadow-lg);
+        }
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .about-list {
+            display: grid;
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+        }
+        .about-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.7rem;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+        .about-list li .check-icon {
+            color: var(--accent);
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        /* SERVICES */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        .service-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 2rem 1.5rem;
+            text-align: center;
+            transition: all var(--transition);
+            cursor: default;
+        }
+        .service-card:hover {
+            border-color: var(--accent);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-4px);
+            background: var(--bg-card-hover);
+        }
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .service-card h3 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        /* GALLERY */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 220px;
+            gap: 0.8rem;
+        }
+        .gallery-grid .gallery-item {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: all var(--transition);
+        }
+        .gallery-grid .gallery-item:hover {
+            transform: scale(1.03);
+            box-shadow: var(--shadow-lg);
+            z-index: 2;
+        }
+        .gallery-grid .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .gallery-grid .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+        .gallery-grid .gallery-item:nth-child(1) {
+            grid-column: span 2;
+        }
+        .gallery-grid .gallery-item:nth-child(4) {
+            grid-column: span 2;
+        }
+        .gallery-grid .gallery-item:nth-child(5) {
+            grid-row: span 1;
+            grid-column: span 2;
+        }
+
+        /* PRICING */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            align-items: stretch;
+        }
+        .pricing-card {
+            background: var(--bg-card);
+            border: 2px solid var(--border);
+            border-radius: var(--radius-xl);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            transition: all var(--transition);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .pricing-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+        }
+        .pricing-card.featured {
+            border-color: var(--accent);
+            background: var(--bg-card-hover);
+            box-shadow: var(--shadow-md);
+            transform: scale(1.03);
+            z-index: 1;
+        }
+        .pricing-card.featured:hover {
+            transform: scale(1.03) translateY(-4px);
+            box-shadow: var(--shadow-lg), 0 0 40px var(--accent-glow);
+        }
+        .popular-badge {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent);
+            color: #fff;
+            padding: 0.4rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            white-space: nowrap;
+        }
+        .pricing-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+        .pricing-price {
+            font-family: var(--font-heading);
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: var(--accent);
+            margin: 1rem 0;
+        }
+        .pricing-price small {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+        .pricing-features {
+            list-style: none;
+            text-align: left;
+            margin: 1.5rem 0;
+            flex-grow: 1;
+        }
+        .pricing-features li {
+            padding: 0.5rem 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .pricing-features li::before {
+            content: '✓';
+            color: var(--accent);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .pricing-card .btn {
+            width: 100%;
+            justify-content: center;
+            margin-top: auto;
+        }
+
+        /* TRAINERS */
+        .trainers-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .trainer-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            transition: all var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+        .trainer-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--border-light);
+        }
+        .trainer-image {
+            aspect-ratio: 1/1;
+            overflow: hidden;
+        }
+        .trainer-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .trainer-card:hover .trainer-image img {
+            transform: scale(1.05);
+        }
+        .trainer-info {
+            padding: 1.8rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .trainer-info h3 {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -0.3px;
+        }
+        .trainer-role {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+        .trainer-traits {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        .trainer-traits span {
+            background: var(--glass-bg);
+            border: 1px solid var(--border);
+            padding: 0.35rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            white-space: nowrap;
+            transition: all var(--transition-fast);
+        }
+        .trainer-traits span:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* TESTIMONIALS */
+        .testimonials-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        .testimonials-rating {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .stars {
+            color: var(--star-color);
+            font-size: 1.4rem;
+            letter-spacing: 0.15em;
+        }
+        .rating-text {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        .rating-count {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .testimonial-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            transition: all var(--transition);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .testimonial-card:hover {
+            border-color: var(--border-light);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+        .testimonial-stars {
+            color: var(--star-color);
+            letter-spacing: 0.1em;
+            font-size: 1rem;
+        }
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-size: 0.95rem;
+            flex-grow: 1;
+        }
+        .testimonial-author {
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .testimonial-author small {
+            display: block;
+            font-weight: 400;
+            color: var(--text-muted);
+            text-transform: none;
+            letter-spacing: 0;
+            font-size: 0.8rem;
+            margin-top: 2px;
+        }
+
+        /* CONTACT */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        .contact-info-icon {
+            font-size: 1.6rem;
+            flex-shrink: 0;
+            width: 44px;
+            height: 44px;
+            background: var(--glass-bg);
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-info-item h4 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.2rem;
+        }
+        .contact-info-item p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        .contact-map {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            min-height: 250px;
+            box-shadow: var(--shadow-sm);
+        }
+        .contact-map iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 250px;
+            border: 0;
+        }
+        .contact-form {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.9rem 1.2rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            transition: all var(--transition-fast);
+            resize: vertical;
+            outline: none;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-glow);
+        }
+        .contact-form textarea {
+            min-height: 120px;
+        }
+        .contact-form .btn {
+            align-self: flex-start;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 3rem 1.5rem 1.5rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 2rem;
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+        .footer h4 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        .footer p,
+        .footer a {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            line-height: 1.7;
+        }
+        .footer a:hover {
+            color: var(--accent);
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            max-width: var(--max-width);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* WHATSAPP FLOATING */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 997;
+            width: 56px;
+            height: 56px;
+            background: var(--whatsapp-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            transition: all var(--transition);
+            cursor: pointer;
+            border: none;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 28px rgba(37, 211, 102, 0.55);
+        }
+        .whatsapp-float svg {
+            width: 28px;
+            height: 28px;
+            fill: #fff;
+        }
+
+        /* SCROLL REVEAL */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .about-image {
+                order: -1;
+            }
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 180px;
+                gap: 0.5rem;
+            }
+            .gallery-grid .gallery-item:nth-child(1),
+            .gallery-grid .gallery-item:nth-child(4),
+            .gallery-grid .gallery-item:nth-child(5) {
+                grid-column: span 1;
+            }
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            .pricing-card.featured {
+                transform: none;
+            }
+            .pricing-card.featured:hover {
+                transform: translateY(-4px);
+            }
+            .trainers-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                max-width: 450px;
+                margin: 0 auto;
+            }
+            section {
+                padding: 3rem 1rem;
+            }
+            .navbar-inner {
+                height: 60px;
+            }
+            .hero {
+                min-height: 80vh;
+            }
+        }
+        @media (max-width: 480px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+            .services-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 200px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            .btn {
+                width: 100%;
+                justify-content: center;
+                max-width: 280px;
+            }
+            .contact-form .btn {
+                align-self: stretch;
+                max-width: none;
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+            .reveal {
+                transition: none;
+                opacity: 1;
+                transform: none;
+            }
+            * {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileOverlay" aria-hidden="true"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-inner">
+            <a href="#home" class="nav-logo" aria-label="Fitness Studio Gym Home">
+                <span class="logo-icon">🏋️</span> Fitness <span>Studio</span>
+            </a>
+            <div class="nav-links" id="navLinks" role="menubar">
+                <a href="#home" role="menuitem">Home</a>
+                <a href="#about" role="menuitem">About</a>
+                <a href="#services" role="menuitem">Services</a>
+                <a href="#pricing" role="menuitem">Pricing</a>
+                <a href="#trainers" role="menuitem">Trainers</a>
+                <a href="#testimonials" role="menuitem">Reviews</a>
+                <a href="#contact" role="menuitem">Contact</a>
+                <a href="#contact" class="nav-cta-btn mobile-only" role="menuitem">Join Now</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+                    <span class="icon-sun">☀️</span>
+                    <span class="icon-moon">🌙</span>
+                </button>
+                <a href="#contact" class="nav-cta-btn desktop-only">Join Now</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=80&auto=format&fit=crop"
+            alt="Modern gym with premium equipment"
+            loading="eager"
+            width="1600"
+            height="900">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge">🏆 Lahore's Premium Gym</span>
+            <h1>Train <span>Anytime.</span> Transform <span>Anytime.</span></h1>
+            <p class="hero-subtitle">
+                Unleash your potential at Fitness Studio Gym — where expert trainers, modern equipment,
+                and a motivating community come together to help you achieve your fitness goals.
+            </p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">🔥 Join Now</a>
+                <a href="tel:+923312777719" class="btn btn-outline">📞 Call Now</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section aria-labelledby="features-heading">
+        <div class="container">
+            <div class="features-grid reveal">
+                <div class="feature-card">
+                    <span class="feature-icon">🕐</span>
+                    <h3>Open Hours</h3>
+                    <p>6 AM – 11 PM daily, flexible timing for your busy schedule</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🎓</span>
+                    <h3>Certified Trainers</h3>
+                    <p>Expert coaches with years of experience & proven results</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">⚙️</span>
+                    <h3>Modern Equipment</h3>
+                    <p>State-of-the-art machines for every workout need</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🤝</span>
+                    <h3>Friendly Environment</h3>
+                    <p>Supportive, welcoming space — comfortable for everyone</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-heading">
+        <div class="container">
+            <div class="about-grid">
+                <div class="reveal">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title" id="about-heading">Why Choose Fitness Studio?</h2>
+                    <p class="section-subtitle">
+                        We're more than just a gym — we're a community dedicated to helping you become
+                        the best version of yourself, in a clean, spacious, and fully-equipped facility.
+                    </p>
+                    <ul class="about-list">
+                        <li><span class="check-icon">✓</span> Clean, spacious, and hygienic environment</li>
+                        <li><span class="check-icon">✓</span> Comfortable & safe space for women</li>
+                        <li><span class="check-icon">✓</span> Professional, certified trainers who care</li>
+                        <li><span class="check-icon">✓</span> Budget-friendly plans with no hidden fees</li>
+                        <li><span class="check-icon">✓</span> Customized diet & workout plans</li>
+                        <li><span class="check-icon">✓</span> Positive, motivating atmosphere</li>
+                    </ul>
+                </div>
+                <div class="about-image reveal">
+                    <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=800&q=80&auto=format&fit=crop"
+                    alt="Clean and spacious gym interior at Fitness Studio Gym"
+                    loading="lazy"
+                    width="800"
+                    height="600">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" aria-labelledby="services-heading">
+        <div class="container text-center">
+            <span class="section-label">Our Services</span>
+            <h2 class="section-title" id="services-heading">What We Offer</h2>
+            <p class="section-subtitle">Comprehensive fitness solutions tailored to your unique goals</p>
+            <div class="services-grid reveal">
+                <div class="service-card">
+                    <span class="service-icon">💪</span>
+                    <h3>Strength Training</h3>
+                    <p>Build raw power with guided resistance & weight training programs</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🔥</span>
+                    <h3>Weight Loss</h3>
+                    <p>Effective fat-burning programs with diet & cardio support</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">👤</span>
+                    <h3>Personal Training</h3>
+                    <p>One-on-one sessions with dedicated, expert trainers</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🏃</span>
+                    <h3>Cardio Fitness</h3>
+                    <p>Boost endurance with modern treadmills, bikes & rowing machines</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🏋️</span>
+                    <h3>Muscle Building</h3>
+                    <p>Structured hypertrophy plans for serious muscle growth</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section aria-labelledby="gallery-heading">
+        <div class="container text-center">
+            <span class="section-label">Gallery</span>
+            <h2 class="section-title" id="gallery-heading">Inside Our Gym</h2>
+            <p class="section-subtitle">Take a look at our premium facility</p>
+        </div>
+        <div class="gallery-grid reveal" style="max-width:var(--max-width);margin:0 auto;padding:0 1.5rem;">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=800&q=80&auto=format&fit=crop"
+                alt="Weight training area with dumbbells"
+                loading="lazy" width="800" height="440">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80&auto=format&fit=crop"
+                alt="Cardio machines row"
+                loading="lazy" width="600" height="440">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=600&q=80&auto=format&fit=crop"
+                alt="Gym floor with modern equipment"
+                loading="lazy" width="600" height="440">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&q=80&auto=format&fit=crop"
+                alt="Spacious workout zone"
+                loading="lazy" width="800" height="440">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=800&q=80&auto=format&fit=crop"
+                alt="Personal training session"
+                loading="lazy" width="800" height="440">
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" aria-labelledby="pricing-heading">
+        <div class="container text-center">
+            <span class="section-label">Pricing</span>
+            <h2 class="section-title" id="pricing-heading">Choose Your Plan</h2>
+            <p class="section-subtitle">Affordable options with no compromise on quality</p>
+            <div class="pricing-grid reveal">
+                <div class="pricing-card">
+                    <h3>Monthly</h3>
+                    <div class="pricing-price">PKR 2,500<small>/mo</small></div>
+                    <ul class="pricing-features">
+                        <li>Full gym access</li>
+                        <li>Locker facility</li>
+                        <li>Basic trainer guidance</li>
+                        <li>6 AM – 11 PM access</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Get Started</a>
+                </div>
+                <div class="pricing-card featured">
+                    <span class="popular-badge">🔥 Most Popular</span>
+                    <h3>Quarterly</h3>
+                    <div class="pricing-price">PKR 6,000<small>/3mo</small></div>
+                    <ul class="pricing-features">
+                        <li>Everything in Monthly</li>
+                        <li>2 personal training sessions</li>
+                        <li>Custom diet plan</li>
+                        <li>Save PKR 1,500</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Join Now</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Annual</h3>
+                    <div class="pricing-price">PKR 20,000<small>/yr</small></div>
+                    <ul class="pricing-features">
+                        <li>Everything in Quarterly</li>
+                        <li>8 personal training sessions</li>
+                        <li>Priority support</li>
+                        <li>Save PKR 10,000</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAINERS -->
+    <section id="trainers" aria-labelledby="trainers-heading">
+        <div class="container text-center">
+            <span class="section-label">Meet Your Trainers</span>
+            <h2 class="section-title" id="trainers-heading">Expert Coaches</h2>
+            <p class="section-subtitle">Dedicated professionals committed to your success</p>
+            <div class="trainers-grid reveal">
+                <!-- Trainer 1: Amna -->
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=600&q=80&auto=format&fit=crop"
+                        alt="Amna - Female Fitness Trainer"
+                        loading="lazy"
+                        width="600"
+                        height="600">
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Amna</h3>
+                        <p class="trainer-role">Female Fitness Trainer</p>
+                        <div class="trainer-traits">
+                            <span>💬 Friendly & Supportive</span>
+                            <span>🔥 Motivating</span>
+                            <span>🎯 Professional</span>
+                            <span>📋 Customized Plans</span>
+                            <span>✨ Positive Energy</span>
+                            <span>🎤 Soft Spoken</span>
+                            <span>🏆 Goal-Oriented</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Trainer 2: Waleed Bhai -->
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=600&q=80&auto=format&fit=crop"
+                        alt="Waleed Bhai - Head Trainer & Owner"
+                        loading="lazy"
+                        width="600"
+                        height="600">
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Waleed Bhai</h3>
+                        <p class="trainer-role">Head Trainer / Owner</p>
+                        <div class="trainer-traits">
+                            <span>🧠 Knowledgeable</span>
+                            <span>🥗 Diet Plans</span>
+                            <span>✅ Correct Form Focus</span>
+                            <span>🤝 Supportive & Attentive</span>
+                            <span>💼 Professional</span>
+                            <span>📈 Results-Driven</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" aria-labelledby="testimonials-heading">
+        <div class="container">
+            <div class="testimonials-header reveal">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title" id="testimonials-heading">What Our Members Say</h2>
+                <div class="testimonials-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-text">4.9</span>
+                    <span class="rating-count">(152 reviews)</span>
+                </div>
+            </div>
+            <div class="testimonials-grid reveal">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Amna is an incredible trainer! She's so friendly and motivating, always pushing me
+                        to do my best. Her positive energy makes every session enjoyable. I've never felt
+                        more comfortable at a gym — highly recommend!"
+                    </p>
+                    <p class="testimonial-author">Fatima K. <small>Member since 2023</small></p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Waleed Bhai really knows his stuff. He corrected my form on so many exercises and
+                        even gave me a personalized diet plan. Super attentive and professional. Best gym
+                        experience I've had in Lahore!"
+                    </p>
+                    <p class="testimonial-author">Ahmed R. <small>Member since 2022</small></p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "I was nervous about joining a gym, but the environment here is so welcoming.
+                        Amna made me feel right at home with her soft-spoken, supportive approach.
+                        The customized plan she designed helped me lose 8kg in 3 months!"
+                    </p>
+                    <p class="testimonial-author">Sara M. <small>Member since 2024</small></p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Clean, spacious, and the equipment is top-notch. Waleed Bhai and Amna both
+                        genuinely care about every member. The budget-friendly pricing makes it even
+                        better. Best decision I made this year!"
+                    </p>
+                    <p class="testimonial-author">Usman T. <small>Member since 2023</small></p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Hands down the best trainers in Lahore. Amna's customized workout plan transformed
+                        my fitness level. Waleed Bhai's diet advice was a game-changer. Friendly vibes,
+                        professional coaching — 10/10!"
+                    </p>
+                    <p class="testimonial-author">Zainab A. <small>Member since 2024</small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-heading">
+        <div class="container text-center">
+            <span class="section-label">Get In Touch</span>
+            <h2 class="section-title" id="contact-heading">Contact Us</h2>
+            <p class="section-subtitle">Visit us or drop a message — we'd love to hear from you!</p>
+        </div>
+        <div class="container">
+            <div class="contact-grid reveal">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <span class="contact-info-icon">📍</span>
+                        <div>
+                            <h4>Address</h4>
+                            <p>G899+729, Wahdat Rd,<br>Rehmanpura Colony, Lahore</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="contact-info-icon">📞</span>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+923312777719">+92 331 2777719</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="contact-info-icon">🕐</span>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p>Monday – Saturday: 6:00 AM – 11:00 PM<br>Sunday: 7:00 AM – 9:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <iframe
+                        src="https://www.google.com/maps/embed?q=G899%2B729+Wahdat+Road+Rehmanpura+Colony+Lahore&z=16&output=embed"
+                        title="Fitness Studio Gym Location on Google Maps"
+                        loading="lazy"
+                        allowfullscreen=""
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm" aria-label="Contact form">
+                <input type="text" name="name" placeholder="Your Name" required aria-label="Your name">
+                <input type="tel" name="phone" placeholder="Phone Number" required aria-label="Phone number">
+                <textarea name="message" placeholder="Your Message" required aria-label="Your message"></textarea>
+                <button type="submit" class="btn btn-primary">📩 Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+    <div class="footer-grid">
+        <div>
+            <h4>🏋️ Fitness Studio Gym</h4>
+            <p>Premium fitness experience in the heart of Lahore. Train anytime, transform anytime — with expert coaches and a welcoming community.</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <p><a href="#home">Home</a></p>
+            <p><a href="#about">About</a></p>
+            <p><a href="#services">Services</a></p>
+            <p><a href="#pricing">Pricing</a></p>
+            <p><a href="#trainers">Trainers</a></p>
+            <p><a href="#contact">Contact</a></p>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p>📍 Wahdat Rd, Rehmanpura Colony, Lahore</p>
+            <p>📞 <a href="tel:+923312777719">+92 331 2777719</a></p>
+            <p>🕐 6 AM – 11 PM Daily</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2024</span> Fitness Studio Gym. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/923312777719?text=Hello%20Fitness%20Studio%20Gym!%20I%27m%20interested%20in%20joining."
+class="whatsapp-float"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Chat on WhatsApp"
+title="Chat with us on WhatsApp">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+</svg>
+</a>
+
+<!-- MINIMAL JAVASCRIPT -->
+<script>
+    (function() {
+        // DOM refs
+        const themeToggle = document.getElementById('themeToggle');
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        const navbar = document.getElementById('navbar');
+        const contactForm = document.getElementById('contactForm');
+        const currentYearSpan = document.getElementById('currentYear');
+
+        // Set current year
+        if (currentYearSpan) {
+            currentYearSpan.textContent = new Date().getFullYear();
+        }
+
+        // Dark/Light mode
+        const STORAGE_KEY = 'fitness-studio-theme';
+        const stored = localStorage.getItem(STORAGE_KEY);
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if (stored === 'light' || (!stored && !prefersDark)) {
+            document.body.classList.add('light-mode');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            const isLight = document.body.classList.contains('light-mode');
+            localStorage.setItem(STORAGE_KEY, isLight ? 'light' : 'dark');
+        });
+
+        // Mobile menu
+        function closeMenu() {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        }
+
+        function openMenu() {
+            navLinks.classList.add('active');
+            hamburger.classList.add('active');
+            mobileOverlay.classList.add('active');
+            hamburger.setAttribute('aria-expanded', 'true');
+            document.body.style.overflow = 'hidden';
+        }
+
+        hamburger.addEventListener('click', () => {
+            if (navLinks.classList.contains('active')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+
+        mobileOverlay.addEventListener('click', closeMenu);
+
+        // Close menu on nav link click
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('active')) {
+                    closeMenu();
+                }
+            });
+        });
+
+        // Close menu on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+                closeMenu();
+            }
+        });
+
+        // Navbar scroll shadow
+        let scrollTicking = false;
+        function updateNavbarShadow() {
+            if (window.scrollY > 10) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            scrollTicking = false;
+        }
+        window.addEventListener('scroll', () => {
+            if (!scrollTicking) {
+                scrollTicking = true;
+                requestAnimationFrame(updateNavbarShadow);
+            }
+        }, { passive: true });
+        updateNavbarShadow();
+
+        // Scroll reveal with Intersection Observer
+        const revealElements = document.querySelectorAll('.reveal');
+        if ('IntersectionObserver' in window && revealElements.length > 0) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.12,
+                rootMargin: '0px 0px -40px 0px'
+            });
+            revealElements.forEach(el => observer.observe(el));
+        } else {
+            // Fallback: show all
+            revealElements.forEach(el => el.classList.add('revealed'));
+        }
+
+        // Contact form submission
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = this.querySelector('input[name="name"]').value.trim();
+                const phone = this.querySelector('input[name="phone"]').value.trim();
+                const message = this.querySelector('textarea[name="message"]').value.trim();
+
+                if (!name || !phone || !message) {
+                    alert('Please fill in all fields before sending.');
+                    return;
+                }
+
+                const waMessage =
+                    `Hello Fitness Studio Gym!%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Message:* ${encodeURIComponent(message)}`;
+                window.open(`https://wa.me/923312777719?text=${waMessage}`, '_blank',
+                'noopener,noreferrer');
+                this.reset();
+            });
+        }
+    })();
+</script>
+</body>
+</html>
